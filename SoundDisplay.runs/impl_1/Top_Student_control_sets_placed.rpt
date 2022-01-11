@@ -1,0 +1,138 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Apr  3 10:07:56 2021
+| Host         : DESKTOP-NCF6GJG running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
+| Design       : Top_Student
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    68 |
+| Unused register locations in slices containing registers |   176 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            7 |
+|      6 |            2 |
+|      8 |            2 |
+|     10 |            2 |
+|     12 |            6 |
+|     14 |            8 |
+|    16+ |           41 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             610 |          160 |
+| No           | No                    | Yes                    |              26 |            4 |
+| No           | Yes                   | No                     |             978 |          145 |
+| Yes          | No                    | No                     |             366 |           61 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             228 |           41 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+--------------------------+---------------------------------+------------------+----------------+
+|          Clock Signal         |       Enable Signal      |         Set/Reset Signal        | Slice Load Count | Bel Load Count |
++-------------------------------+--------------------------+---------------------------------+------------------+----------------+
+| ~clk6p25m_BUFG                |                          |                                 |                1 |              2 |
+|  arch/clock2/CLK              |                          | arch/crosshair_x1[5]_i_1_n_1    |                1 |              2 |
+|  arch/clock3/CLK              |                          | arch/crosshair_x2[5]_i_1_n_1    |                1 |              2 |
+|  arch/clock4/CLK              |                          | arch/crosshair_x3[5]_i_1_n_1    |                1 |              2 |
+|  arch/clock4/CLK              |                          | arch/crosshair_y4[1]_i_1_n_1    |                1 |              2 |
+|  arch/clock4/CLK              |                          | arch/crosshair_x4[5]_i_1_n_1    |                1 |              2 |
+|  CLOCK_IBUF_BUFG              |                          | car/counter[0]_i_1_n_1          |                1 |              2 |
+|  arch/gamemode_reg[2]_i_2_n_1 |                          |                                 |                2 |              6 |
+|  mod3/nolabel_line13/clk      |                          |                                 |                1 |              6 |
+|  clk6p25m_BUFG                | car/wave_done[3]_i_1_n_1 |                                 |                2 |              8 |
+|  clk6p25m_BUFG                | menu/RGB_reg[4]_0        | dut5/RGB_reg[12]                |                2 |              8 |
+|  arch/clock4/CLK              |                          | arch/crosshair_y4[5]_i_1_n_1    |                2 |             10 |
+|  menu/clock/CLK               |                          | menu/sequence0                  |                2 |             10 |
+|  arch/clock3/CLK              |                          | arch/crosshair_x2[6]_i_1_n_1    |                3 |             12 |
+|  arch/clock2/CLK              |                          | arch/crosshair_x1[6]_i_1_n_1    |                2 |             12 |
+|  arch/clock4/CLK              |                          | arch/crosshair_x3[6]_i_1_n_1    |                3 |             12 |
+|  arch/clock4/CLK              |                          | arch/crosshair_x4[6]_i_1_n_1    |                3 |             12 |
+|  clk6p25m_BUFG                | menu/RGB_reg[4]_0        | dut5/RGB_reg[15]_1              |                3 |             12 |
+|  clk6p25m_BUFG                | car/down[5]_i_2_n_1      | car/down[5]_i_1_n_1             |                3 |             12 |
+|  arch/seg_2_reg[6]_i_2__0_n_1 |                          |                                 |                3 |             14 |
+|  arch/seg_3_reg[6]_i_2__0_n_1 |                          |                                 |                3 |             14 |
+|  arch/seg_1_reg[6]_i_2__0_n_1 |                          |                                 |                5 |             14 |
+|  mod5/seg_2_reg[6]_i_2_n_1    |                          |                                 |                2 |             14 |
+|  mod5/seg_1_reg[6]_i_2_n_1    |                          |                                 |                2 |             14 |
+|  mod5/seg_3_reg[6]_i_2_n_1    |                          |                                 |                5 |             14 |
+|  mod5/seg_0_reg[6]_i_2_n_1    |                          |                                 |                4 |             14 |
+|  clk6p25m_BUFG                | car/score[6]_i_2_n_1     | car/score[6]_i_1_n_1            |                2 |             14 |
+|  spmod_btnU/dff1/E[0]         |                          |                                 |                3 |             16 |
+|  n_0_6503_BUFG                |                          |                                 |                5 |             18 |
+|  clk6p25m_BUFG                | car/anreg[1]_i_1_n_1     |                                 |                2 |             18 |
+|  mod3/nolabel_line13/clk      | n_0_6503_BUFG            |                                 |                2 |             20 |
+|  dut1/S[0]                    |                          |                                 |                6 |             20 |
+|  CLOCK_IBUF_BUFG              | an[3]_i_1__0_n_1         | menu/RGB_reg[4]_0               |                5 |             22 |
+|  CLOCK_IBUF_BUFG              | mod2/max[11]_i_1_n_1     |                                 |                2 |             22 |
+|  CLOCK_IBUF_BUFG              | n_0_6503_BUFG            |                                 |                4 |             22 |
+| ~test/J_MIC3_Pin4_OBUF        |                          |                                 |                5 |             24 |
+|  CLOCK_IBUF_BUFG              | test/E[0]                | mod2/MAX                        |                3 |             24 |
+|  CLOCK_IBUF_BUFG              |                          | J_MIC3_Pin1_OBUF_BUFG           |                3 |             24 |
+|  arch/clock1/CLK              |                          |                                 |                5 |             26 |
+|  mod5/period                  |                          | mod5/reset                      |                4 |             26 |
+|  arch/clock5/CLK              |                          | arch/RGB[15]_i_1__3_n_1         |                3 |             28 |
+|  clk6p25m_BUFG                | car/L1                   |                                 |                4 |             30 |
+|  clk6p25m_BUFG                | car/count2               | dut5/SS[0]                      |                9 |             32 |
+|  CLOCK_IBUF_BUFG              | dut6/RGB[15]_i_1__4_n_1  |                                 |                7 |             32 |
+| ~clk6p25m_BUFG                |                          | spmod_btnC/dff1/reset           |                4 |             34 |
+|  CLOCK_IBUF_BUFG              |                          | mod2/LED_reg[15]                |               13 |             38 |
+| ~clk6p25m_BUFG                | dut5/delay[0]_i_1_n_1    | spmod_btnC/dff1/reset           |                5 |             40 |
+|  J_MIC3_Pin1_OBUF_BUFG        | mod5/clear               |                                 |               11 |             40 |
+|  CLOCK_IBUF_BUFG              |                          | mod2/count[22]_i_1_n_1          |                6 |             44 |
+|  arch/score_reg[23]_i_2_n_1   |                          |                                 |               20 |             48 |
+|  clk6p25m_BUFG                | mod3/count20             |                                 |                7 |             52 |
+|  J_MIC3_Pin1_OBUF_BUFG        |                          |                                 |               10 |             54 |
+|  clk6p25m_BUFG                | menu/RGB_reg[4]_0        |                                 |               11 |             56 |
+|  CLOCK_IBUF_BUFG              |                          | clock1/clear                    |                8 |             64 |
+|  CLOCK_IBUF_BUFG              |                          | menu/clock/clear                |                8 |             64 |
+|  CLOCK_IBUF_BUFG              |                          | mod3/nolabel_line13/clear       |                8 |             64 |
+|  CLOCK_IBUF_BUFG              |                          | arch/clock5/count[0]_i_1__4_n_1 |                8 |             64 |
+|  CLOCK_IBUF_BUFG              |                          | arch/clock4/clear               |                8 |             64 |
+|  CLOCK_IBUF_BUFG              |                          | arch/clock3/count[0]_i_1__3_n_1 |                8 |             64 |
+|  CLOCK_IBUF_BUFG              |                          | arch/clock2/count[0]_i_1__2_n_1 |                8 |             64 |
+|  CLOCK_IBUF_BUFG              |                          | dut4/count[0]_i_1__7_n_1        |                8 |             64 |
+|  CLOCK_IBUF_BUFG              |                          | arch/clock1/count[0]_i_1__5_n_1 |                8 |             64 |
+| ~clk6p25m_BUFG                | dut5/state               | spmod_btnC/dff1/reset           |                9 |             64 |
+|  J_MIC3_Pin1_OBUF_BUFG        |                          | mod5/clear                      |                8 |             64 |
+|  clk6p25m_BUFG                | car/count2               |                                 |                9 |             66 |
+| ~clk6p25m_BUFG                |                          | dut5/spi_word[39]_i_1_n_1       |               15 |             90 |
+|  clk6p25m_BUFG                |                          |                                 |               24 |            112 |
+|  CLOCK_IBUF_BUFG              |                          |                                 |               54 |            180 |
++-------------------------------+--------------------------+---------------------------------+------------------+----------------+
+
+

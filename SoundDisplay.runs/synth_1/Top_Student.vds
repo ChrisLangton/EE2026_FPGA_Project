@@ -1,0 +1,1149 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Apr  3 10:01:45 2021
+# Process ID: 9420
+# Current directory: C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.runs/synth_1
+# Command line: vivado.exe -log Top_Student.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Student.tcl
+# Log file: C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.runs/synth_1/Top_Student.vds
+# Journal file: C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Top_Student.tcl -notrace
+Command: synth_design -top Top_Student -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20268 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 358.270 ; gain = 101.355
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+INFO: [Synth 8-6157] synthesizing module 'slow_clock' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/slow_clock.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'slow_clock' (1#1) [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/slow_clock.v:23]
+INFO: [Synth 8-6157] synthesizing module 'single_pulse' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/single_pulse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DFF' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DFF' (2#1) [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'single_pulse' (3#1) [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/single_pulse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'new_clk' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/new_clk.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'new_clk' (4#1) [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/new_clk.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Audio_Capture' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Audio_Capture' (5#1) [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v:25]
+WARNING: [Synth 8-689] width (16) of port connection 'sample' does not match port width (12) of module 'Audio_Capture' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:103]
+INFO: [Synth 8-6157] synthesizing module 'menu' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/menu.v:3]
+	Parameter background bound to: 16'b1111011001010101 
+	Parameter welcome_border bound to: 16'b1110110010001110 
+	Parameter select_border bound to: 16'b1111101001001001 
+	Parameter character bound to: 16'b1111101100100110 
+	Parameter mic bound to: 16'b0011100111000111 
+	Parameter music1 bound to: 16'b1111111000000000 
+	Parameter music2 bound to: 16'b0000001110011000 
+	Parameter music3 bound to: 16'b1001011010001010 
+	Parameter white bound to: 16'b1111111111111111 
+	Parameter black bound to: 16'b0000000000000000 
+	Parameter blue bound to: 16'b0011001010110010 
+	Parameter red2 bound to: 16'b1110110010001110 
+	Parameter yellow2 bound to: 16'b1111111011001100 
+WARNING: [Synth 8-6090] variable 'sequence' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/menu.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'menu' (6#1) [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/menu.v:3]
+WARNING: [Synth 8-689] width (13) of port connection 'x' does not match port width (7) of module 'menu' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:104]
+WARNING: [Synth 8-689] width (13) of port connection 'y' does not match port width (6) of module 'menu' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:104]
+INFO: [Synth 8-6157] synthesizing module 'find_max' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/find_max.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'find_max' (7#1) [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/find_max.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Audio_Indicator' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Audio_Indicator.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Audio_Indicator' (8#1) [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Audio_Indicator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sound_freq' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/freq_sound.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/freq_sound.v:77]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/freq_sound.v:90]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/freq_sound.v:103]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/freq_sound.v:116]
+WARNING: [Synth 8-567] referenced signal 'frequency_0' should be on the sensitivity list [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/freq_sound.v:76]
+WARNING: [Synth 8-567] referenced signal 'frequency_1' should be on the sensitivity list [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/freq_sound.v:76]
+WARNING: [Synth 8-567] referenced signal 'frequency_2' should be on the sensitivity list [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/freq_sound.v:76]
+WARNING: [Synth 8-567] referenced signal 'frequency_3' should be on the sensitivity list [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/freq_sound.v:76]
+WARNING: [Synth 8-6014] Unused sequential element frequency_reg was removed.  [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/freq_sound.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'sound_freq' (9#1) [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/freq_sound.v:3]
+INFO: [Synth 8-6157] synthesizing module 'draw_oled_bars' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/draw_oled_bars.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'draw_oled_bars' (10#1) [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/draw_oled_bars.v:23]
+INFO: [Synth 8-6157] synthesizing module 'draw_lock_screen' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/draw_lock_screen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'draw_lock_screen' (11#1) [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/draw_lock_screen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'car_game' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/car_game.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/car_game.v:157]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/car_game.v:295]
+WARNING: [Synth 8-6014] Unused sequential element count3_reg was removed.  [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/car_game.v:112]
+INFO: [Synth 8-6155] done synthesizing module 'car_game' (12#1) [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/car_game.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
+	Parameter Width bound to: 96 - type: integer 
+	Parameter Height bound to: 64 - type: integer 
+	Parameter PixelCount bound to: 6144 - type: integer 
+	Parameter PixelCountWidth bound to: 13 - type: integer 
+	Parameter ClkFreq bound to: 6250000 - type: integer 
+	Parameter FrameFreq bound to: 60 - type: integer 
+	Parameter FrameDiv bound to: 104166 - type: integer 
+	Parameter FrameDivWidth bound to: 17 - type: integer 
+	Parameter PowerDelay bound to: 20 - type: integer 
+	Parameter ResetDelay bound to: 3 - type: integer 
+	Parameter VccEnDelay bound to: 20 - type: integer 
+	Parameter StartupCompleteDelay bound to: 100 - type: integer 
+	Parameter MaxDelay bound to: 100 - type: integer 
+	Parameter MaxDelayCount bound to: 625000 - type: integer 
+	Parameter StateCount bound to: 32 - type: integer 
+	Parameter StateWidth bound to: 5 - type: integer 
+	Parameter PowerUp bound to: 5'b00000 
+	Parameter Reset bound to: 5'b00001 
+	Parameter ReleaseReset bound to: 5'b00011 
+	Parameter EnableDriver bound to: 5'b00010 
+	Parameter DisplayOff bound to: 5'b00110 
+	Parameter SetRemapDisplayFormat bound to: 5'b00111 
+	Parameter SetStartLine bound to: 5'b00101 
+	Parameter SetOffset bound to: 5'b00100 
+	Parameter SetNormalDisplay bound to: 5'b01100 
+	Parameter SetMultiplexRatio bound to: 5'b01101 
+	Parameter SetMasterConfiguration bound to: 5'b01111 
+	Parameter DisablePowerSave bound to: 5'b01110 
+	Parameter SetPhaseAdjust bound to: 5'b01010 
+	Parameter SetDisplayClock bound to: 5'b01011 
+	Parameter SetSecondPrechargeA bound to: 5'b01001 
+	Parameter SetSecondPrechargeB bound to: 5'b01000 
+	Parameter SetSecondPrechargeC bound to: 5'b11000 
+	Parameter SetPrechargeLevel bound to: 5'b11001 
+	Parameter SetVCOMH bound to: 5'b11011 
+	Parameter SetMasterCurrent bound to: 5'b11010 
+	Parameter SetContrastA bound to: 5'b11110 
+	Parameter SetContrastB bound to: 5'b11111 
+	Parameter SetContrastC bound to: 5'b11101 
+	Parameter DisableScrolling bound to: 5'b11100 
+	Parameter ClearScreen bound to: 5'b10100 
+	Parameter VccEn bound to: 5'b10101 
+	Parameter DisplayOn bound to: 5'b10111 
+	Parameter PrepareNextFrame bound to: 5'b10110 
+	Parameter SetColAddress bound to: 5'b10010 
+	Parameter SetRowAddress bound to: 5'b10011 
+	Parameter WaitNextFrame bound to: 5'b10001 
+	Parameter SendPixel bound to: 5'b10000 
+	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
+	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:124]
+INFO: [Synth 8-226] default block is never used [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:201]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:349]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (13#1) [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
+WARNING: [Synth 8-350] instance 'dut5' of module 'Oled_Display' requires 15 connections, but only 14 given [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:116]
+INFO: [Synth 8-6157] synthesizing module 'Archery_Game' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:3]
+	Parameter background bound to: 16'b1111011001010101 
+	Parameter red bound to: 16'b1110110010001110 
+	Parameter yellow bound to: 16'b1111111011001100 
+	Parameter green bound to: 16'b1010111010010001 
+	Parameter crosshair bound to: 16'b0111010101101000 
+	Parameter white bound to: 16'b1111111111111111 
+	Parameter black bound to: 16'b0000000000000000 
+	Parameter blue bound to: 16'b0011001010110010 
+WARNING: [Synth 8-567] referenced signal 'curr_task' should be on the sensitivity list [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:58]
+WARNING: [Synth 8-567] referenced signal 'gamemode' should be on the sensitivity list [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:58]
+WARNING: [Synth 8-567] referenced signal 'crosshair_x1' should be on the sensitivity list [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:58]
+WARNING: [Synth 8-567] referenced signal 'score' should be on the sensitivity list [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:58]
+WARNING: [Synth 8-567] referenced signal 'crosshair_x2' should be on the sensitivity list [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:58]
+WARNING: [Synth 8-567] referenced signal 'crosshair_x3' should be on the sensitivity list [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:58]
+WARNING: [Synth 8-567] referenced signal 'crosshair_y4' should be on the sensitivity list [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:58]
+WARNING: [Synth 8-567] referenced signal 'crosshair_x4' should be on the sensitivity list [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:58]
+WARNING: [Synth 8-567] referenced signal 'sw' should be on the sensitivity list [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:58]
+WARNING: [Synth 8-567] referenced signal 'curr_task' should be on the sensitivity list [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:108]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:189]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:202]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:215]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:228]
+WARNING: [Synth 8-567] referenced signal 'segment_0' should be on the sensitivity list [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:183]
+WARNING: [Synth 8-567] referenced signal 'segment_1' should be on the sensitivity list [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:183]
+WARNING: [Synth 8-567] referenced signal 'segment_2' should be on the sensitivity list [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:183]
+WARNING: [Synth 8-567] referenced signal 'segment_3' should be on the sensitivity list [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:183]
+INFO: [Synth 8-6155] done synthesizing module 'Archery_Game' (14#1) [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:3]
+WARNING: [Synth 8-689] width (4) of port connection 'sound_level' does not match port width (5) of module 'Archery_Game' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:117]
+WARNING: [Synth 8-689] width (16) of port connection 'freq_level' does not match port width (5) of module 'Archery_Game' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:117]
+WARNING: [Synth 8-689] width (13) of port connection 'x' does not match port width (7) of module 'Archery_Game' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:117]
+WARNING: [Synth 8-689] width (13) of port connection 'y' does not match port width (6) of module 'Archery_Game' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:117]
+INFO: [Synth 8-6157] synthesizing module 'control' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'control' (15#1) [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (16#1) [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+WARNING: [Synth 8-3917] design Top_Student has port dp driven by constant 1
+WARNING: [Synth 8-3331] design Archery_Game has unconnected port right
+WARNING: [Synth 8-3331] design Archery_Game has unconnected port sw[14]
+WARNING: [Synth 8-3331] design Archery_Game has unconnected port sw[13]
+WARNING: [Synth 8-3331] design Archery_Game has unconnected port sw[12]
+WARNING: [Synth 8-3331] design Archery_Game has unconnected port sw[11]
+WARNING: [Synth 8-3331] design Archery_Game has unconnected port sw[10]
+WARNING: [Synth 8-3331] design Archery_Game has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Archery_Game has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Archery_Game has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Archery_Game has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Archery_Game has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Archery_Game has unconnected port sw[4]
+WARNING: [Synth 8-3331] design car_game has unconnected port CLOCK_30HZ
+WARNING: [Synth 8-3331] design draw_lock_screen has unconnected port sp_btnL
+WARNING: [Synth 8-3331] design draw_lock_screen has unconnected port sp_btnR
+WARNING: [Synth 8-3331] design draw_lock_screen has unconnected port sp_btnC
+WARNING: [Synth 8-3331] design sound_freq has unconnected port curr_task[3]
+WARNING: [Synth 8-3331] design sound_freq has unconnected port curr_task[2]
+WARNING: [Synth 8-3331] design sound_freq has unconnected port curr_task[1]
+WARNING: [Synth 8-3331] design sound_freq has unconnected port curr_task[0]
+WARNING: [Synth 8-3331] design sound_freq has unconnected port clk381hz
+WARNING: [Synth 8-3331] design menu has unconnected port curr_task[3]
+WARNING: [Synth 8-3331] design menu has unconnected port curr_task[2]
+WARNING: [Synth 8-3331] design menu has unconnected port curr_task[1]
+WARNING: [Synth 8-3331] design menu has unconnected port curr_task[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 466.758 ; gain = 209.844
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 466.758 ; gain = 209.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 466.758 ; gain = 209.844
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Student_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 838.449 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 838.570 ; gain = 581.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 838.570 ; gain = 581.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 838.570 ; gain = 581.656
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "secondary_mode" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_task" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "MAX" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "seg_1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_10" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AN" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AN" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "down0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "down0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "wave_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "L" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "car_centre" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "car_centre" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "car_left" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RGB" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "down0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "down0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wave_done" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "L" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "car_centre" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "car_centre" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "car_left" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RGB" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "L1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "fsm_next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:144]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:147]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:130]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:136]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:141]
+INFO: [Synth 8-5546] ROM "seg_0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "seg_1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "seg_2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "seg_3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "seg_0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "seg_1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "seg_2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "seg_3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "crosshair_x10" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "crosshair_x10" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "crosshair_x20" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "crosshair_x20" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "crosshair_x30" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "crosshair_x30" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "crosshair_x40" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "crosshair_x40" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "crosshair_y40" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "crosshair_y40" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "an" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "an" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "an" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'seg_1_reg' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Audio_Indicator.v:117]
+WARNING: [Synth 8-327] inferring latch for variable 'seg_0_reg' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Audio_Indicator.v:120]
+WARNING: [Synth 8-327] inferring latch for variable 'seg_3_reg' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/freq_sound.v:117]
+WARNING: [Synth 8-327] inferring latch for variable 'seg_2_reg' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/freq_sound.v:104]
+WARNING: [Synth 8-327] inferring latch for variable 'seg_1_reg' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/freq_sound.v:91]
+WARNING: [Synth 8-327] inferring latch for variable 'seg_0_reg' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/freq_sound.v:78]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 PowerUp | 00000000100000000000000000000000 |                            00000
+                   Reset | 00000000000100000000000000000000 |                            00001
+            ReleaseReset | 00000000000000000000100000000000 |                            00011
+            EnableDriver | 00000000000000000001000000000000 |                            00010
+              DisplayOff | 00000000000000000100000000000000 |                            00110
+   SetRemapDisplayFormat | 00000100000000000000000000000000 |                            00111
+            SetStartLine | 00001000000000000000000000000000 |                            00101
+               SetOffset | 10000000000000000000000000000000 |                            00100
+        SetNormalDisplay | 00000000000000000000000010000000 |                            01100
+       SetMultiplexRatio | 00000000000000000000000000100000 |                            01101
+  SetMasterConfiguration | 00000000000000000000000001000000 |                            01111
+        DisablePowerSave | 00000000000000000000000000000100 |                            01110
+          SetPhaseAdjust | 00000000000000000000000000001000 |                            01010
+         SetDisplayClock | 00000000001000000000000000000000 |                            01011
+     SetSecondPrechargeA | 00000000010000000000000000000000 |                            01001
+     SetSecondPrechargeB | 01000000000000000000000000000000 |                            01000
+     SetSecondPrechargeC | 00000010000000000000000000000000 |                            11000
+       SetPrechargeLevel | 00000001000000000000000000000000 |                            11001
+                SetVCOMH | 00000000000000010000000000000000 |                            11011
+        SetMasterCurrent | 00000000000000100000000000000000 |                            11010
+            SetContrastA | 00000000000001000000000000000000 |                            11110
+            SetContrastB | 00100000000000000000000000000000 |                            11111
+            SetContrastC | 00000000000000000000000000000001 |                            11101
+        DisableScrolling | 00000000000000000000000000000010 |                            11100
+             ClearScreen | 00000000000000000000000000010000 |                            10100
+                   VccEn | 00010000000000000000000000000000 |                            10101
+               DisplayOn | 00000000000010000000000000000000 |                            10111
+        PrepareNextFrame | 00000000000000001000000000000000 |                            10110
+           SetColAddress | 00000000000000000000010000000000 |                            10010
+           SetRowAddress | 00000000000000000000000100000000 |                            10011
+           WaitNextFrame | 00000000000000000000001000000000 |                            10001
+               SendPixel | 00000000000000000010000000000000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
+WARNING: [Synth 8-327] inferring latch for variable 'gamemode_reg' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:111]
+WARNING: [Synth 8-327] inferring latch for variable 'variable2_reg' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:62]
+WARNING: [Synth 8-327] inferring latch for variable 'variable1_reg' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:61]
+WARNING: [Synth 8-327] inferring latch for variable 'seg_3_reg' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:229]
+WARNING: [Synth 8-327] inferring latch for variable 'seg_2_reg' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:216]
+WARNING: [Synth 8-327] inferring latch for variable 'seg_1_reg' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:203]
+WARNING: [Synth 8-327] inferring latch for variable 'seg_0_reg' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:190]
+WARNING: [Synth 8-327] inferring latch for variable 'score_reg' [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/Archery.v:70]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 838.570 ; gain = 581.656
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |Top_Student__GB0 |           1|     34603|
+|2     |car_game         |           1|     20992|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     36 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 32    
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input     24 Bit       Adders := 5     
+	   2 Input     23 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 18    
+	   3 Input      7 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 14    
+	   3 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 3     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               36 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 10    
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 8     
+	                7 Bit    Registers := 12    
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 13    
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 37    
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	   2 Input     36 Bit        Muxes := 1     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 13    
+	   2 Input     23 Bit        Muxes := 1     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 598   
+	  64 Input     16 Bit        Muxes := 1     
+	  15 Input     16 Bit        Muxes := 2     
+	  16 Input     16 Bit        Muxes := 2     
+	  12 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 4     
+	   6 Input     16 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 30    
+	  12 Input      8 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 5     
+	   3 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 10    
+	  13 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 3     
+	   3 Input      7 Bit        Muxes := 5     
+	   2 Input      6 Bit        Muxes := 8     
+	   5 Input      6 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	  21 Input      5 Bit        Muxes := 1     
+	  32 Input      5 Bit        Muxes := 2     
+	  21 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 3     
+	  15 Input      4 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   4 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
+	  12 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 10    
+	  11 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 121   
+	   3 Input      1 Bit        Muxes := 6     
+	  13 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top_Student 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module car_game 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     36 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 32    
+	   2 Input      7 Bit       Adders := 14    
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               36 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 8     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 1     
+	  12 Input      8 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 5     
+	   3 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   5 Input      6 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  21 Input      5 Bit        Muxes := 1     
+	  21 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	  12 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 29    
+	   3 Input      1 Bit        Muxes := 2     
+	  13 Input      1 Bit        Muxes := 1     
+Module DFF__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module new_clk__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module new_clk__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module new_clk__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module new_clk__12 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module new_clk__13 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module new_clk 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Audio_Capture 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module new_clk__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module menu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 11    
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   8 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 404   
+	  64 Input     16 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+Module find_max 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     23 Bit       Adders := 1     
++---Registers : 
+	               23 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module new_clk__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Audio_Indicator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                7 Bit    Registers := 3     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	  15 Input     16 Bit        Muxes := 1     
+	  16 Input     16 Bit        Muxes := 1     
+	  13 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	  15 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module sound_freq 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 4     
+Module draw_oled_bars 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	  12 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 174   
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 30    
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+Module draw_lock_screen 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  16 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 14    
+	  15 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 34    
+Module Oled_Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module new_clk__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module new_clk__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module new_clk__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module new_clk__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module new_clk__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module new_clk__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Archery_Game 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input     24 Bit       Adders := 5     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 4     
+	   3 Input      7 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 5     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 13    
+	   6 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 4     
+	   3 Input      7 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 6     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 6     
+	   3 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 27    
+	  11 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module control 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element clock6/clk_reg was removed.  [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/new_clk.v:26]
+INFO: [Synth 8-5544] ROM "crosshair_x40" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "crosshair_y40" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "crosshair_x10" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "crosshair_x20" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "crosshair_x30" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "an" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element clock3/clk_reg was removed.  [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/new_clk.v:26]
+WARNING: [Synth 8-6014] Unused sequential element clock4/clk_reg was removed.  [C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.srcs/sources_1/new/new_clk.v:26]
+INFO: [Synth 8-5544] ROM "an" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "L" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "down0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MAX" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "seg_0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design Top_Student has port dp driven by constant 1
+INFO: [Synth 8-3886] merging instance 'car/R3_reg[0]' (FDE) to 'car/R1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'car/L3_reg[0]' (FDE) to 'car/R1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'car/R3_reg[1]' (FDE) to 'car/R1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'car/L3_reg[1]' (FDE) to 'car/R1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'car/L3_reg[2]' (FDE) to 'car/L3_reg[3]'
+INFO: [Synth 8-3886] merging instance 'car/R3_reg[3]' (FDE) to 'car/R3_reg[4]'
+INFO: [Synth 8-3886] merging instance 'car/L3_reg[3]' (FDE) to 'car/L3_reg[4]'
+INFO: [Synth 8-3886] merging instance 'car/R3_reg[5]' (FDE) to 'car/R3_reg[6]'
+INFO: [Synth 8-3886] merging instance 'car/L3_reg[5]' (FDE) to 'car/R1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'car/L3_reg[6]' (FDE) to 'car/R1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'car/L3_reg[7]' (FDE) to 'car/R1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'car/R3_reg[7]' (FDE) to 'car/R1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'car/R2_reg[0]' (FDE) to 'car/R1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'car/L2_reg[0]' (FDE) to 'car/R1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'car/R2_reg[1]' (FDE) to 'car/R1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'car/L2_reg[1]' (FDE) to 'car/R1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'car/L2_reg[2]' (FDE) to 'car/L2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'car/R2_reg[3]' (FDE) to 'car/R2_reg[4]'
+INFO: [Synth 8-3886] merging instance 'car/L2_reg[3]' (FDE) to 'car/L2_reg[4]'
+INFO: [Synth 8-3886] merging instance 'car/R2_reg[5]' (FDE) to 'car/R2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'car/L2_reg[5]' (FDE) to 'car/R1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'car/L2_reg[6]' (FDE) to 'car/R1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'car/L2_reg[7]' (FDE) to 'car/R1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'car/R2_reg[7]' (FDE) to 'car/R1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'car/R1_reg[0]' (FDE) to 'car/R1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'car/L1_reg[0]' (FDE) to 'car/R1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'car/R1_reg[1]' (FDE) to 'car/R1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'car/L1_reg[1]' (FDE) to 'car/R1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'car/R1_reg[2]' (FDE) to 'car/R1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'car/L1_reg[2]' (FDE) to 'car/L1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'car/R1_reg[3]' (FDE) to 'car/R1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'car/L1_reg[3]' (FDE) to 'car/L1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'car/R1_reg[4]' (FDE) to 'car/R1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'car/R1_reg[5]' (FDE) to 'car/R1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'car/L1_reg[5]' (FDE) to 'car/R1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'car/L1_reg[6]' (FDE) to 'car/R1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'car/L1_reg[7]' (FDE) to 'car/R1_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (car/\R1_reg[7] )
+INFO: [Synth 8-3886] merging instance 'car/R_reg[0]' (FDRE) to 'car/R_reg[1]'
+INFO: [Synth 8-3886] merging instance 'car/L_reg[0]' (FDRE) to 'car/L_reg[1]'
+INFO: [Synth 8-3886] merging instance 'car/R_reg[1]' (FDRE) to 'car/R_reg[5]'
+INFO: [Synth 8-3886] merging instance 'car/L_reg[1]' (FDRE) to 'car/L_reg[5]'
+INFO: [Synth 8-3886] merging instance 'car/R_reg[2]' (FDRE) to 'car/R_reg[3]'
+INFO: [Synth 8-3886] merging instance 'car/L_reg[2]' (FDRE) to 'car/L_reg[3]'
+INFO: [Synth 8-3886] merging instance 'car/R_reg[3]' (FDRE) to 'car/R_reg[4]'
+INFO: [Synth 8-3886] merging instance 'car/L_reg[3]' (FDRE) to 'car/L_reg[4]'
+INFO: [Synth 8-3886] merging instance 'car/R_reg[5]' (FDRE) to 'car/R_reg[6]'
+INFO: [Synth 8-3886] merging instance 'car/L_reg[5]' (FDRE) to 'car/L_reg[6]'
+INFO: [Synth 8-3886] merging instance 'car/L_reg[6]' (FDRE) to 'car/L_reg[7]'
+INFO: [Synth 8-3886] merging instance 'car/R_reg[6]' (FDRE) to 'car/R_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (car/\L_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (car/\R_reg[7] )
+INFO: [Synth 8-3886] merging instance 'car/anreg_reg[2]' (FDE) to 'car/anreg_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (car/\anreg_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (L_reg[7]) is unused and will be removed from module car_game.
+WARNING: [Synth 8-3332] Sequential element (R_reg[7]) is unused and will be removed from module car_game.
+WARNING: [Synth 8-3332] Sequential element (anreg_reg[3]) is unused and will be removed from module car_game.
+WARNING: [Synth 8-3332] Sequential element (R1_reg[7]) is unused and will be removed from module car_game.
+INFO: [Synth 8-3886] merging instance 'i_0/dut2/RGB_reg[0]' (FDSE) to 'i_0/dut2/RGB_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/dut3/RGB_reg[0]' (FDSE) to 'i_0/dut3/RGB_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/dut2/RGB_reg[1]' (FDSE) to 'i_0/dut2/RGB_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/dut3/RGB_reg[1]' (FDSE) to 'i_0/dut3/RGB_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/dut2/RGB_reg[2]' (FDSE) to 'i_0/dut2/RGB_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/dut3/RGB_reg[2]' (FDSE) to 'i_0/dut3/RGB_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/arch/RGB_reg[2]' (FDR) to 'i_0/arch/RGB_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_0/dut2/RGB_reg[3]' (FDSE) to 'i_0/dut2/RGB_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/dut3/RGB_reg[3]' (FDSE) to 'i_0/dut3/RGB_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/dut3/RGB_reg[4]' (FDSE) to 'i_0/dut3/RGB_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_0/dut2/RGB_reg[5]' (FDRE) to 'i_0/dut2/RGB_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_0/dut3/RGB_reg[5]' (FDSE) to 'i_0/dut3/RGB_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_0/dut2/RGB_reg[6]' (FDRE) to 'i_0/dut2/RGB_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/dut3/RGB_reg[6]' (FDSE) to 'i_0/dut3/RGB_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/dut2/RGB_reg[7]' (FDRE) to 'i_0/dut2/RGB_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_0/dut3/RGB_reg[7]' (FDSE) to 'i_0/dut3/RGB_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_0/dut2/RGB_reg[8]' (FDRE) to 'i_0/dut2/RGB_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/dut3/RGB_reg[8]' (FDSE) to 'i_0/dut3/RGB_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/dut2/RGB_reg[9]' (FDRE) to 'i_0/dut2/RGB_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_0/dut3/RGB_reg[9]' (FDSE) to 'i_0/dut3/RGB_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_0/arch/RGB_reg[10]' (FDS) to 'i_0/arch/RGB_reg[14]'
+INFO: [Synth 8-3886] merging instance 'i_0/dut2/RGB_reg[11]' (FDRE) to 'i_0/dut2/RGB_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_0/dut3/RGB_reg[11]' (FDSE) to 'i_0/dut3/RGB_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_0/dut2/RGB_reg[12]' (FDRE) to 'i_0/dut2/RGB_reg[13]'
+INFO: [Synth 8-3886] merging instance 'i_0/dut3/RGB_reg[12]' (FDSE) to 'i_0/dut3/RGB_reg[13]'
+INFO: [Synth 8-3886] merging instance 'i_0/dut2/RGB_reg[13]' (FDRE) to 'i_0/dut2/RGB_reg[14]'
+INFO: [Synth 8-3886] merging instance 'i_0/dut3/RGB_reg[13]' (FDSE) to 'i_0/dut3/RGB_reg[14]'
+INFO: [Synth 8-3886] merging instance 'i_0/mod3/seg_1_reg[0]' (LD) to 'i_0/mod3/seg_1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/mod3/alpha_reg[1]' (FD) to 'i_0/mod3/alpha_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_0/mod3/seg_1_reg[1]' (LD) to 'i_0/mod3/seg_1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/mod3/seg_1_reg[3]' (LD) to 'i_0/mod3/seg_1_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/mod3/\alpha_reg[4] )
+INFO: [Synth 8-3886] merging instance 'i_0/mod3/seg_1_reg[4]' (LD) to 'i_0/mod3/seg_1_reg[5]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/mod3/\seg_1_reg[6] )
+INFO: [Synth 8-3886] merging instance 'i_0/dut2/RGB_reg[14]' (FDRE) to 'i_0/dut2/RGB_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_0/dut3/RGB_reg[14]' (FDSE) to 'i_0/dut3/RGB_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_0/mod2/MAX_reg[12]' (FDRE) to 'i_0/mod2/MAX_reg[13]'
+INFO: [Synth 8-3886] merging instance 'i_0/mod2/MAX_reg[13]' (FDRE) to 'i_0/mod2/MAX_reg[14]'
+INFO: [Synth 8-3886] merging instance 'i_0/mod2/MAX_reg[15]' (FDRE) to 'i_0/mod2/MAX_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/mod2/\MAX_reg[14] )
+INFO: [Synth 8-3886] merging instance 'i_0/mod3/LED_reg[10]' (FDR) to 'i_0/mod3/LED_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_0/mod3/led_reg[10]' (FD) to 'i_0/mod3/led_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_0/mod2/max_reg[12]' (FDE) to 'i_0/mod2/max_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_0/mod2/max_reg[13]' (FDE) to 'i_0/mod2/max_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_0/mod2/max_reg[15]' (FDE) to 'i_0/mod2/max_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/mod2/\max_reg[14] )
+WARNING: [Synth 8-3332] Sequential element (MAX_reg[14]) is unused and will be removed from module find_max.
+WARNING: [Synth 8-3332] Sequential element (max_reg[14]) is unused and will be removed from module find_max.
+WARNING: [Synth 8-3332] Sequential element (max_reg[0]) is unused and will be removed from module find_max.
+WARNING: [Synth 8-3332] Sequential element (seg_1_reg[6]) is unused and will be removed from module Audio_Indicator.
+WARNING: [Synth 8-3332] Sequential element (alpha_reg[4]) is unused and will be removed from module Audio_Indicator.
+INFO: [Synth 8-3886] merging instance 'car/block1_pos_reg[0]' (FDE) to 'car/L1_reg[4]'
+WARNING: [Synth 8-3332] Sequential element (seg_0_reg[6]) is unused and will be removed from module Archery_Game.
+WARNING: [Synth 8-3332] Sequential element (seg_0_reg[5]) is unused and will be removed from module Archery_Game.
+WARNING: [Synth 8-3332] Sequential element (seg_0_reg[4]) is unused and will be removed from module Archery_Game.
+WARNING: [Synth 8-3332] Sequential element (seg_0_reg[3]) is unused and will be removed from module Archery_Game.
+WARNING: [Synth 8-3332] Sequential element (seg_0_reg[2]) is unused and will be removed from module Archery_Game.
+WARNING: [Synth 8-3332] Sequential element (seg_0_reg[1]) is unused and will be removed from module Archery_Game.
+WARNING: [Synth 8-3332] Sequential element (seg_0_reg[0]) is unused and will be removed from module Archery_Game.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:55 ; elapsed = 00:02:03 . Memory (MB): peak = 871.516 ; gain = 614.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|car_game    | segreg     | 32x7          | LUT            | 
+|car_game    | segreg     | 32x7          | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |Top_Student__GB0 |           1|     11668|
+|2     |car_game         |           1|      6118|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:12 ; elapsed = 00:02:22 . Memory (MB): peak = 871.516 ; gain = 614.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:21 ; elapsed = 00:02:31 . Memory (MB): peak = 871.516 ; gain = 614.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |Top_Student__GB0 |           1|     11668|
+|2     |car_game         |           1|      6118|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:29 ; elapsed = 00:02:40 . Memory (MB): peak = 1014.777 ; gain = 757.863
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:32 ; elapsed = 00:02:43 . Memory (MB): peak = 1014.777 ; gain = 757.863
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:32 ; elapsed = 00:02:43 . Memory (MB): peak = 1014.777 ; gain = 757.863
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:33 ; elapsed = 00:02:44 . Memory (MB): peak = 1014.777 ; gain = 757.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:34 ; elapsed = 00:02:44 . Memory (MB): peak = 1014.777 ; gain = 757.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:34 ; elapsed = 00:02:45 . Memory (MB): peak = 1014.777 ; gain = 757.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:34 ; elapsed = 00:02:45 . Memory (MB): peak = 1014.777 ; gain = 757.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     4|
+|2     |CARRY4 |   870|
+|3     |LUT1   |   301|
+|4     |LUT2   |   787|
+|5     |LUT3   |   902|
+|6     |LUT4   |   918|
+|7     |LUT5   |   716|
+|8     |LUT6   |  2344|
+|9     |MUXF7  |     5|
+|10    |MUXF8  |     1|
+|11    |FDCE   |    13|
+|12    |FDRE   |   894|
+|13    |FDRE_1 |    31|
+|14    |FDSE   |    71|
+|15    |FDSE_1 |     1|
+|16    |LD     |    93|
+|17    |IBUF   |    17|
+|18    |OBUF   |    37|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------+-----------------+------+
+|      |Instance           |Module           |Cells |
++------+-------------------+-----------------+------+
+|1     |top                |                 |  8005|
+|2     |  arch             |Archery_Game     |  1622|
+|3     |    clock1         |new_clk_16       |    50|
+|4     |    clock2         |new_clk_17       |    50|
+|5     |    clock3         |new_clk_18       |    50|
+|6     |    clock4         |new_clk_19       |    50|
+|7     |    clock5         |new_clk_20       |    50|
+|8     |  car              |car_game         |  2600|
+|9     |  clock1           |new_clk          |    50|
+|10    |  dut1             |slow_clock       |    24|
+|11    |  dut2             |draw_oled_bars   |    21|
+|12    |  dut3             |draw_lock_screen |   113|
+|13    |  dut4             |new_clk_0        |    51|
+|14    |  dut5             |Oled_Display     |  1812|
+|15    |  dut6             |control          |    17|
+|16    |  menu             |menu             |   228|
+|17    |    clock          |new_clk_15       |    57|
+|18    |  mod2             |find_max         |   131|
+|19    |  mod3             |Audio_Indicator  |   165|
+|20    |    nolabel_line13 |new_clk_14       |    50|
+|21    |  mod5             |sound_freq       |   459|
+|22    |  spmod_btnC       |single_pulse     |     5|
+|23    |    dff1           |DFF_12           |     3|
+|24    |    dff2           |DFF_13           |     2|
+|25    |  spmod_btnD       |single_pulse_1   |     4|
+|26    |    dff1           |DFF_10           |     2|
+|27    |    dff2           |DFF_11           |     2|
+|28    |  spmod_btnL       |single_pulse_2   |     5|
+|29    |    dff1           |DFF_8            |     2|
+|30    |    dff2           |DFF_9            |     3|
+|31    |  spmod_btnR       |single_pulse_3   |     5|
+|32    |    dff1           |DFF_6            |     2|
+|33    |    dff2           |DFF_7            |     3|
+|34    |  spmod_btnU       |single_pulse_4   |     9|
+|35    |    dff1           |DFF              |     3|
+|36    |    dff2           |DFF_5            |     6|
+|37    |  test             |Audio_Capture    |    84|
++------+-------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:34 ; elapsed = 00:02:45 . Memory (MB): peak = 1014.777 ; gain = 757.863
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 34 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:19 ; elapsed = 00:02:34 . Memory (MB): peak = 1014.777 ; gain = 386.051
+Synthesis Optimization Complete : Time (s): cpu = 00:02:34 ; elapsed = 00:02:45 . Memory (MB): peak = 1014.777 ; gain = 757.863
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1018 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 125 instances were transformed.
+  FDRE_1 => FDRE (inverted pins: C): 31 instances
+  FDSE_1 => FDSE (inverted pins: C): 1 instances
+  LD => LDCE: 93 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+242 Infos, 90 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:41 ; elapsed = 00:02:53 . Memory (MB): peak = 1014.777 ; gain = 770.539
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/chris/Documents/chrisnge4/SoundDisplay/SoundDisplay.runs/synth_1/Top_Student.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.174 . Memory (MB): peak = 1014.777 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  3 10:04:48 2021...
